@@ -28,7 +28,31 @@
     <br>
     <h2>Graphhopper have found a way to make the flexible routing algorithm 15 times faster.</h2>
     <br>
-    <h2>Legit write more here</h2>
-    <h2><a href="https://www.graphhopper.com/blog/2017/08/14/flexible-routing-15-times-faster/">More info...</a></h2>
-    </body>
+    <h2>Routing Choices include:</h2>
+    <div class = "ghAlgorithms">
+      <ol>
+        <li>Speed (Contraction Hierachies) - Fast</li>
+        </br>
+        <li>Hybrid (Landmarks) - Fast but supports some features that CH does not</li>
+        </br>
+        <li>Flexible (Dijkstra or A*) - Does not require calculating index data and offers full flexiblity but a lot slower</li>
+        </br>
+      </ol>
+    </div>
+    <h2>You can find out more about the algorithms <a href="https://www.graphhopper.com/blog/2017/08/14/flexible-routing-15-times-faster/">here</a></h2>
+    </br>
+    <div>
+    <!--Trying to get the graphhopper api to work
+        Use REST API with key (POST JSON)-->
+      <script type="text/javascript">
+        curl -X POST \
+          'https://graphhopper.com/dashboard/#/apikeys'
+          -H 'content-type: application/json'
+          -d '{
+            "api_key": "78fba383-3877-42f1-b46a-c06fd9f4d7cd"
+          }'
+      </script>
+    </div>
+
+  </body>
 </html>
